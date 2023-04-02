@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+:root {
+    --light: #FAFAFA;
+    --dark: #212121;
+    --semiDark: #252525;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--dark);
+}
+.counter {
+    font-size: 10vh;
+    color: var(--light);
+}
+button {
+    width: 150px;
+    font-size: 1.5rem;
+    color: var(--light);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--light);
+    background: var(--semiDark);
+    -webkit-box-shadow: 3px 3px var(--light);
+    box-shadow: 3px 3px var(--light);
+    cursor: pointer;
+    margin: 15px 0;
+}
+button:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform: translate(3px, 3px);
+    -ms-transform: translate(3px, 3px);
+    transform: translate(3px, 3px);
+}
